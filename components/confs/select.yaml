@@ -19,7 +19,7 @@ select:
 
 
 # select:
-# - platform: custom
+# - platform: template
 #   lambda: |-
 #     Automower *mower = (Automower *) id(automower);
 #     return {mower->modeSelect};
