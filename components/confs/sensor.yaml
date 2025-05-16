@@ -1,5 +1,5 @@
 sensor:
-- platform: template
+- platform: custom
   lambda: |-
       Automower *mower = (Automower *) id(automower);
       return {mower->batteryLevelSensor,mower->chargingTimeSensor,mower->batteryUsedSensor,mower->batteryVoltageSensor,mower->firmwareVersionSensor}; 
