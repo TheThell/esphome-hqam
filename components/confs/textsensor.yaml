@@ -1,10 +1,12 @@
+external_components:
+  - source: automower
 text_sensor:
   # - platform: template
   #   name: "Template Text Sensor"
   #   lambda: |-
   #     return {"Hello World"};
   #   update_interval: 60s
-  - platform: custom
+  - platform: automower
     lambda: |-
       Automower *mower = (Automower *) id(automower);
       //App.register_component(mower);
