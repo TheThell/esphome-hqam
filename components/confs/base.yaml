@@ -26,8 +26,8 @@ text_sensor:
     name: "Last Code"
     id: last_code
 
-mower:
-  id: automower
+automower:
+  id: automower_component
   uart_id: uart_mower
   update_interval: 5s
   battery_level: battery_level
