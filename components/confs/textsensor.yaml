@@ -5,6 +5,8 @@ text_sensor:
   #     return {"Hello World"};
   #   update_interval: 60s
   - platform: template
+    name: "textSensorData"
+    id: "textSensorData"
     lambda: |-
       Automower *mower = (Automower *) id(automower);
       //App.register_component(mower);
