@@ -1,0 +1,23 @@
+esp8266:
+  board: esp01_1m
+  framework:
+    version: recommended
+    # Custom sdkconfig options#
+    sdkconfig_options:
+      COMPILER_OPTIMIZATION_SIZE: y
+
+uart:
+  id: uart_mower
+  rx_pin:
+    number: ${rxpin}
+  tx_pin:
+    number: ${txpin}
+  baud_rate: ${baud}
+  debug:
+    direction: BOTH
+    dummy_receiver: false
+    after:
+      delimiter: "\n"
+    sequence:
+      - lambda: UARTDebug::log_string(direction, bytes);
+
