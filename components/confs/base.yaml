@@ -34,7 +34,7 @@ mower:
   #battery_used: battery_used
  # charging_time: charging_time
   #battery_voltage: battery_voltage
-  firmware_version: firmware_version
+  #firmware_version: firmware_version
   #mode: mode
-  status: status
-  last_code: last_code
+  #status: status
+  #last_code: last_code
