@@ -28,7 +28,7 @@ text_sensor:
 
 mower:
   id: automower
-  #uart_id: uart_mower
+  uart_id: uart_mower
   update_interval: 5s
   #battery_level: battery_level
   #battery_used: battery_used
